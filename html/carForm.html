@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html id = "carForm">
+    <head>
+        <meta content = "UTF-8">
+        <meta name = "viewport" content = "width = device - width, initial-scale = 1.0">
+        <link rel = "stylesheet" href = "../set/css/clear.css">
+        <link rel = "stylesheet" href = "../set/css/carFormStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <title>Cars</title>
+    </head>
+    <body>
+        <button class = "toMain" id = "toMain">На главную страницу</button>
+        <div class = "container">
+            <p class = "title">Добавьте описание автомобиля</p>
+            <div class = form>
+                <div class = "loadCarPhoto" id = "loadCarPhoto">
+                    <input type = "file" class = "carPhoto" id = "carPhoto" onchange = "addPhoto(this)">
+                    <div class = loadPhoto>
+                        <label for = "carPhoto" class = "input__file-button">
+                            <div class = "loadButton">
+                                <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M440-200h80v-167l64 64 56-57-160-160-160 160 57 56 63-63v167ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg></span>
+                                <p class="text">Загрузите фото</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <img class = "carImage" id = "carImage">
+                <input type = "text" class = "carName" id = "carName" placeholder = "Название автомобиля">
+                <textarea class = "description" id = "description" placeholder = "Описание автомобиля"></textarea>
+                <input type = "number" class = "price" id = "price" placeholder = "Цена автомобиля в рублях">
+                <button class = "addCar" id = "addCar">Добавить автомобиль</button>
+            </div>
+        </div>
+        <script src = "../set/js/carFormApp.js"></script>
+    </body>
+</html>
